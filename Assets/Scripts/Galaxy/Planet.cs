@@ -2,15 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RotateStar : MonoBehaviour {
+public class Planet : CommonGravity {
 	public float rotateSpeed = 0.2f;
-	// Use this for initialization
-	void Start () {
 
+	// Use this for initialization
+	protected void Start () {
+		base.Start ();
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	protected void Update () {
+		base.Update ();
 		transform.Rotate (0, 0.2f, 0);
 	}
 }

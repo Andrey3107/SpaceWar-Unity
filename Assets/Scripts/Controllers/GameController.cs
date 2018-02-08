@@ -4,7 +4,7 @@ using UnityEngine;
 public class GameController : MonoBehaviour {
 
 	public const string ATTACK_COMMAND = "Attack";
-	private const int ENEMIES_COUNT = 10;
+	private const int ENEMIES_COUNT = 5;
 	private const float SPAWN_RADIUS = 20f;
 
 	public static GameController instance;

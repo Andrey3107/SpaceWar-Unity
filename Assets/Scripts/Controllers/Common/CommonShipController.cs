@@ -53,6 +53,7 @@ public class CommonShipController : MonoBehaviour {
 				health -= PLAYER_BULLET_DAMAGE;
 			}
 			if (health <= 0) {
+				Debug.Log ("Player");
 				Explode();
 			}
 		}

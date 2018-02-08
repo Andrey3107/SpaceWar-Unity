@@ -2,15 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// to do 
-// smooth movement up down left right
-// improve controller
-// different map asteroids
-// improve sun
-// collision
 
 public class Galaxy : MonoBehaviour {
-	public int numberStars = 300;
+	public int numberAsteroids = 300;
 	public int minimumRadius = 90;
 	public int maximumRadius = 300;
 	public float minSize = 0.1f;
@@ -25,7 +19,7 @@ public class Galaxy : MonoBehaviour {
 		SafetyCheck ();
 
 		int failCount = 0;
-		for (int i = 0; i < numberStars; i++)
+		for (int i = 0; i < numberAsteroids; i++)
 		{
 			Vector3 positionAster = RandomPosition ();
 
@@ -42,7 +36,7 @@ public class Galaxy : MonoBehaviour {
 				i--;
 				failCount++;
 			}
-			if (failCount > numberStars) {
+			if (failCount > numberAsteroids) {
 				Debug.LogError ("minDist too big");
 				break;
 			}
