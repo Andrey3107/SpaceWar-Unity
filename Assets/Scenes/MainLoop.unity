@@ -502,7 +502,6 @@ MonoBehaviour:
   deltaX: 125
   deltaZ: 5
   deltaY: 0
-  rigidBody: {fileID: 1085238157}
   rotateSpeed: 0.9
 --- !u!54 &1085238157
 Rigidbody:
@@ -697,7 +696,6 @@ MonoBehaviour:
   deltaX: 0
   deltaZ: 0
   deltaY: 0
-  rigidBody: {fileID: 1170063214}
   rotateSpeed: 1.1
 --- !u!1 &1417734409
 GameObject:
@@ -797,7 +795,6 @@ MonoBehaviour:
   deltaX: 70
   deltaZ: 10
   deltaY: 0
-  rigidBody: {fileID: 1417734415}
   rotateSpeed: 0.7
 --- !u!54 &1417734415
 Rigidbody:
@@ -932,7 +929,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: -1525590743
+  randomSeed: 687395269
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -4174,7 +4171,6 @@ MonoBehaviour:
   deltaX: 60
   deltaZ: 1
   deltaY: 0
-  rigidBody: {fileID: 1968847557}
   rotateSpeed: 1.5
 --- !u!54 &1968847557
 Rigidbody:
@@ -4243,10 +4239,9 @@ MonoBehaviour:
   deltaX: 0
   deltaZ: 0
   deltaY: 0
-  rigidBody: {fileID: 2138555361}
-  engineSpeed: 30
-  maxSpeed: 80
-  rotateSpeed: 80
+  engineSpeed: 80
+  maxSpeed: 100
+  rotateSpeed: 100
 --- !u!54 &2138555361
 Rigidbody:
   m_ObjectHideFlags: 0

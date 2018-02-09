@@ -6,12 +6,12 @@ using UnityEngine;
 // no display camera rendering after dead
 // when hit sun sun disappear 
 
-// problem with crosshair
+// problem with crosshair use different models
 // change diagonal speed
 // better system for move
 
 // aster collision
-// respwan asters
+// respawan asters
 // destroy asters
 
 // made torpedos
@@ -19,13 +19,12 @@ using UnityEngine;
 
 
 // new 3d models
- 
-[RequireComponent(typeof(Rigidbody))]
+
 
 public class MoveShipController : CommonGravity {
-	public float engineSpeed = 30f;
-	public float maxSpeed = 80;
-	public float rotateSpeed = 80f;
+	[SerializeField] private float engineSpeed = 80f;
+	[SerializeField] private float maxSpeed = 100;
+	[SerializeField] private float rotateSpeed = 100f;
 
 	private bool up;
 	private bool down;
@@ -55,7 +54,7 @@ public class MoveShipController : CommonGravity {
 	}
 
 	// Use this for initialization
-	protected void Start () {
+	protected override void Start () {
 		base.Start ();
 		deltaZ = 0;
 		deltaX = 0;
@@ -63,7 +62,7 @@ public class MoveShipController : CommonGravity {
 	}
 
 	// Update is called once per frame
-	protected void Update () {
+	protected override void Update () {
 		base.Update ();
 
 		// move forward

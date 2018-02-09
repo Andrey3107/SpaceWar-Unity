@@ -4,15 +4,15 @@ using UnityEngine;
 
 
 public class Asteroid : CommonGravity {
-	public int minSpeed = -10;
-	public int maxSpeed = 10;
-	public int rotateSpeed = 20;
+	[SerializeField] private int minSpeed = -10;
+	[SerializeField] private int maxSpeed = 10;
+	[SerializeField] private int rotateSpeed = 20;
 
 	private Vector3 astDt;
 
 
 	// Use this for initialization
-	protected void Start () {
+	protected override void Start () {
 		base.Start ();
 		RandomDt ();
 	}
@@ -23,7 +23,7 @@ public class Asteroid : CommonGravity {
 
 	}	
 	// Update is called once per frame
-	protected void Update () {
+	protected override void Update () {
 		base.Update ();
 
 		transform.Rotate (rotateSpeed*deltaX*Time.deltaTime,

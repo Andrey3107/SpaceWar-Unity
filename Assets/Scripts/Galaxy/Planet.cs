@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Planet : CommonGravity {
-	public float rotateSpeed = 0.2f;
+	[SerializeField] private float rotateSpeed = 0.2f;
 
 	// Use this for initialization
-	protected void Start () {
+	protected override void Start () {
 		base.Start ();
 	}
 	
 	// Update is called once per frame
-	protected void Update () {
+	protected override void Update () {
 		base.Update ();
-		transform.Rotate (0, 0.2f, 0);
+		transform.Rotate (0, rotateSpeed, 0);
 	}
 }

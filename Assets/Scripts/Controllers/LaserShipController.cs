@@ -5,13 +5,15 @@ using UnityEngine;
 
 public class LaserShipController : CommonShipController {
 
+
+
 	private enum GunState
 	{
 		Idle,
 		Fire
 	}
 
-	public const float BULLET_SPAWN_DISTANCE = 0.5f;
+	[SerializeField] private const float BULLET_SPAWN_DISTANCE = 0.5f;
 	private const int CHAIN_FIRE_NUMBERS = 1;
 
 	private const float gunPosx = 0.25f;

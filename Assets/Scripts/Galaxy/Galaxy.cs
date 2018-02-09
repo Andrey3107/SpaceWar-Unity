@@ -4,12 +4,12 @@ using UnityEngine;
 
 
 public class Galaxy : MonoBehaviour {
-	public int numberAsteroids = 300;
-	public int minimumRadius = 90;
-	public int maximumRadius = 300;
-	public float minSize = 0.1f;
-	public float maxSize = 10.0f;
-	public float minDist = 8.0f;
+	[SerializeField] private int numberAsteroids = 300;
+	[SerializeField] private int minimumRadius = 90;
+	[SerializeField] private int maximumRadius = 300;
+	[SerializeField] private float minSize = 0.1f;
+	[SerializeField] private float maxSize = 10.0f;
+	[SerializeField] private float minDist = 8.0f;
 
 	public GameObject Asteroid;
 

@@ -6,15 +6,14 @@ public class TurretShipController : MonoBehaviour {
 
 	private const string PLAYER_TAG = "Player";
 
-	public float sensHor = 5.0f;
-	public float sensVer = 5.0f;
+	[SerializeField] private float sensHor = 5.0f;
+	[SerializeField] private float sensVer = 5.0f;
 
-	public float minVer = - 70.0f;
-	public float maxVer = 30.0f;
+	[SerializeField] private float minVer = - 70.0f;
+	[SerializeField] private float maxVer = 30.0f;
 
 	private float rotationX = 0;
 	private float rotationY = 0;
-
 
 	private float cameraInitY = 3;
 

@@ -10,7 +10,7 @@ public class CommonGravity : MonoBehaviour {
 	public float deltaZ;
 	public float deltaY;
 
-	public Rigidbody rigidBody;
+	private Rigidbody rigidBody;
 
 	public void Gravity(Vector3 delta_grav) {
 		deltaX += delta_grav.x;
